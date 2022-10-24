@@ -1,0 +1,540 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*utility*/
+.overly {
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+}
+
+.scroll {
+    position: fixed;
+    right: 15px;
+    bottom: 30px;
+    height: 40px;
+    width: 40px;
+    background: #232323;
+    border-radius: 50%;
+    line-height: 2.5;
+    text-align: center;
+    color: #fff;
+    transition-duration: 500ms;
+}
+
+.scroll:hover {
+    background: blue;
+}
+
+.scroll a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.scroll a:hover {
+    color: #fff;
+}
+
+.scroll a i {
+    font-size: 1.3rem;
+}
+
+.fs {
+    font-size: 1.1rem;
+    line-height: 1.2;
+}
+
+.primary-btn {
+    display: flex;
+    justify-content: center;
+    margin: 5% auto;
+    transition-duration: 500ms;
+    text-align: center;
+
+}
+
+.primary-btn button {
+    background: #f1f1f1;
+    border: 1px solid #d7d7d7;
+    padding: 10px 20px;
+    color: #333;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.primary-btn button:hover {
+    background: blue;
+    color: #fff;
+}
+
+.b-b {
+    border-bottom: 2px solid #f1f1f1;
+}
+
+.arrow {
+    display: inline-block;
+    border: 5px solid;
+    border-top-color: #8d8d8d;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+
+ul li a .arrow:hover {
+    color: #fff
+}
+
+
+.m-5 {
+    margin: 5%;
+}
+
+.p-1 {
+    padding: 20px;
+
+}
+
+.py-1 {
+    padding: 20px 0;
+}
+
+
+.social-icons {
+    display: inline-block
+}
+
+.social-icons ul {
+    list-style: none;
+    display: inline-block;
+
+
+}
+
+.social-icons ul li {
+    display: inline;
+    line-height: 2;
+    padding: 5px;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition-duration: 500ms;
+}
+
+.social-icons ul li :hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.show {
+    margin: 30px;
+    height: 20px;
+}
+
+.show i {
+    padding: 5px;
+    color: #d8d8d8;
+    border: 2px solid #d8d8d8;
+    border-radius: 50%;
+    margin: 5px;
+    transition-duration: 500ms;
+}
+
+.show i:hover {
+    background: blue;
+    cursor: pointer;
+
+}
+
+.mark {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.mark button {
+    background: #f1f1f1;
+    border: none;
+    padding: 5px 10px;
+    color: blue;
+    cursor: pointer;
+}
+
+.mark button:hover {
+    background: blue;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #8d8d8d;
+    transition-duration: 0.5s;
+}
+
+a:hover {
+    color: blue;
+}
+
+/*large card*/
+.l-card {
+    width: 45%;
+    margin: 10px;
+    box-shadow: 4px 5px 5px rgb(170, 170, 170);
+
+}
+
+.l-card .l-card-img {
+    width: 100%;
+    position: relative;
+}
+
+.l-card .l-card-img img {
+    width: 100%;
+}
+
+.l-card .l-card-text {
+    margin: 10px 0;
+    padding: 10px 0;
+
+}
+
+.l-card .l-card-text h5 {
+    margin: 5px 0;
+
+    padding: 0 25px;
+
+}
+
+.l-card .l-card-text p {
+    padding: 10px 25px;
+}
+
+/*end large card */
+/*small card*/
+.s-card-container {
+    width: 45%;
+}
+
+.s-card {
+    display: flex;
+    margin: 10px;
+    box-shadow: 2px 1px 3px rgb(170, 170, 170);
+
+}
+
+.s-card .s-card-text {
+    padding: 0 10px;
+}
+
+.s-card .s-card-text h5 {
+    padding: 10px 0;
+}
+
+.small-text {
+    padding: 5px;
+    font-size: 0.75rem;
+
+}
+
+.small-text:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #000;
+    color: #fff;
+    padding: 20px 10%;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+#navbar ul li {
+    display: inline;
+    margin-left: 20px;
+
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: #8d8d8d;
+    transition-duration: 500ms;
+}
+
+#navbar ul li a:hover {
+    color: #fff;
+}
+
+/*home*/
+#home {
+    background: url(/imgs/bg.webp)no-repeat center center/cover;
+    height: 100vh;
+}
+
+#home .home-container {
+    color: #fff;
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    padding: 30px;
+}
+
+#home .home-container .home-card {
+    display: flex;
+}
+
+#home .home-container .home-card .home-logo {
+    border: 4px solid blue;
+    border-left-color: #333;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 3;
+    text-align: center;
+    padding: 0 17px;
+    margin: 0 15px;
+}
+
+#home .home-container .home-card .home-content {
+    width: 60%;
+}
+
+/*about*/
+#about {
+    display: flex;
+
+}
+
+#about .category {
+    display: flex;
+    padding: 10px;
+    width: 95%;
+
+
+}
+
+#about .category h3 {
+    margin: 0 10px;
+}
+
+#about .category ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+
+
+#about .category ul li a {
+    text-decoration: none;
+    color: #8d8d8d;
+    transition-duration: 0.5s;
+}
+
+#about .category ul li a:hover {
+    color: #000;
+}
+
+#about .category ul li a .arrow:hover {
+    color: #000;
+}
+
+#about .about-content {
+    display: flex;
+    align-items: start;
+    margin: 15px 0;
+}
+
+#about .trending .trending-container .trending-content-1,
+.trending-content-2 {
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+}
+
+#about .trending .trending-container .l-card,
+.s-card {
+    width: 100%;
+}
+
+/*aside*/
+.aside {
+    width: 50%;
+    border-left: 2px solid #f1f1f1;
+}
+
+.aside .l-card {
+    width: 100%;
+    box-shadow: 0px 0px 0px #fff;
+}
+
+.aside .s-card {
+    width: 100%;
+}
+
+/*lifestyle*/
+#lifestyle .lifestyle-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#lifestyle .lifestyle-container .lifestyle-card {
+    position: relative;
+}
+
+#lifestyle .lifestyle-container .lifestyle-card img {
+    width: 100%;
+}
+
+#lifestyle .lifestyle-container .lifestyle-card .lifestyle-img::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: auto;
+    content: '';
+    position: absolute
+}
+
+#lifestyle .lifestyle-container .lifestyle-card .mark {
+    left: 40%;
+    top: 20px;
+
+}
+
+#lifestyle .lifestyle-container .lifestyle-card .link {
+    position: absolute;
+    top: 40%;
+}
+
+#lifestyle .lifestyle-container .lifestyle-card .small-text {
+    position: absolute;
+    bottom: 10px;
+    left: 20%;
+    color: rgb(112, 112, 112);
+    font-size: 0.9rem;
+    transition-duration: 500ms;
+}
+
+#lifestyle .lifestyle-container .lifestyle-card .small-text:hover {
+    color: blue;
+}
+
+#lifestyle .lifestyle-container .lifestyle-card .link a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+/*articles*/
+#articles .articles-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#articles .articles-container .first-article {
+    width: 50%;
+    align-self: flex-start;
+}
+
+#articles .articles-container .first-article .small-text {
+    margin-top: 30px;
+}
+
+#articles .articles-container .second-article {
+    width: 30%;
+}
+
+#articles .articles-container .l-card {
+    width: 100%;
+}
+
+/*footer*/
+#footer {
+    background: #161616;
+    padding: 3%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-container .first-footer {
+    width: 25%;
+}
+
+.footer-container .logo {
+    color: #fff;
+    padding: 15px;
+}
+
+.footer-container .first-footer p {
+    color: #8d8d8d;
+    margin-top: 10px;
+}
+
+.footer-container .second-footer {
+    width: 30%;
+}
+
+.footer-container .second-footer ul {
+    padding: 15px;
+}
+
+.footer-container .second-footer ul li {
+    display: inline;
+    margin: 10px 20px;
+
+}
+
+.footer-container .second-footer ul li a {
+    text-decoration: none;
+    color: #8d8d8d;
+    transition-duration: 500ms;
+}
+
+#footer .footer-container .second-footer ul li a:hover {
+    color: blue;
+}
+
+.footer-container .second-footer ul li a:hover {
+    color: #fff;
+}
+
+#footer .in {
+    position: relative;
+    width: 100%;
+}
+
+#footer .in input {
+
+    background: none;
+    padding: 8px 15px;
+    border: none;
+    border-bottom: 1px solid #d8d8d8;
+    width: 100%;
+    position: relative;
+}
+
+#footer .in i {
+    position: absolute;
+    top: 5px;
+    left: 90%;
+    color: #959595;
+}
+.third-footer {
+    width: 28%;
+}
+ #contact .contact-container {
+    background: url(/imgs/contact.webp)no-repeat center center/cover;
+    height: 80vh;
+
+}
